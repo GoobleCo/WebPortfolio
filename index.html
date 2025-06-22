@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gooby - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h1 class="logo">Gooby</h1>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#work" class="nav-link">Work</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge goblin-badge">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.663 17h4.673M12 3l1 9l-1 9M6 12h12"/>
+                    </svg>
+                    Goblin Enthusiast
+                </div>
+                <h1 class="hero-title">
+                    Hello, I'm <span class="gradient-text">Gooby</span>
+                </h1>
+                <p class="hero-description">
+                    A creative soul from Argentina who weaves stories, creates art, and finds magic in the world of goblins.
+                    Bilingual storyteller passionate about bringing fictional worlds to life.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6l1 9h7l4-7H9"/>
+                        </svg>
+                        Fictional Writer
+                    </span>
+                    <span class="badge">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Artist
+                    </span>
+                    <span class="badge">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Argentina
+                    </span>
+                </div>
+                <button class="cta-button" onclick="scrollToContact()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6l1 9h7l4-7H9"/>
+                            </svg>
+                            Creative Writing
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <p>I craft fictional worlds and characters, bringing imagination to life through storytelling. My passion lies in creating narratives that transport readers to magical realms.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Visual Arts
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Through various artistic mediums, I express creativity and bring visual concepts to life. Art is my way of communicating emotions and ideas beyond words.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages-grid">
+                <div class="card language-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Spanish</h3>
+                        <p class="card-description">Native Language</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <p class="progress-label">Fluent</p>
+                    </div>
+                </div>
+                <div class="card language-card">
+                    <div class="card-header">
+                        <h3 class="card-title">English</h3>
+                        <p class="card-description">Since Age 7</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <p class="progress-label">Fluent</p>
+                    </div>
+                </div>
+                <div class="card language-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Learning</h3>
+                        <p class="card-description">Currently Studying</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <p class="progress-label">In Progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="portfolio-grid">
+                <div class="card portfolio-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Writing Portfolio</h3>
+                        <p class="card-description">Short stories and fictional works</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="portfolio-preview">
+                            <svg class="portfolio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6l1 9h7l4-7H9"/>
+                            </svg>
+                        </div>
+                        <p>A collection of my fictional works, featuring fantasy tales and character-driven narratives.</p>
+                    </div>
+                </div>
+                <div class="card portfolio-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Art Gallery</h3>
+                        <p class="card-description">Visual creations and illustrations</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="portfolio-preview">
+                            <svg class="portfolio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <p>Original artwork and illustrations that bring imagination to visual reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-description">
+                    Interested in collaborating or just want to chat about goblins and creative projects? I'd love to hear from you!
+                </p>
+                <div class="contact-buttons">
+                    <button class="cta-button">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        Email Me
+                    </button>
+                    <button class="secondary-button">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        View Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 Gooby. Made with creativity and a touch of goblin magic.</p>
+                <div class="footer-info">
+                    <span class="footer-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Argentina
+                    </span>
+                    <span class="separator">|</span>
+                    <span class="footer-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.663 17h4.673M12 3l1 9l-1 9M6 12h12"/>
+                        </svg>
+                        Goblin Enthusiast
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
